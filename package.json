@@ -1,0 +1,32 @@
+{
+  "name": "CollectingCheckList",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ./",
+    "compile": "gulp compile",
+    "gulpstart": "gulp start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmbarion/CollectingCheckList.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmbarion/CollectingCheckList/issues"
+  },
+  "homepage": "https://github.com/mmbarion/CollectingCheckList#readme",
+  "devDependencies": {
+    "electron-connect": "^0.3.3",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.1",
+    "gulp-load-plugins": "^0.10.0",
+    "lodash": "^3.10.1",
+    "react": "^0.13.3",
+    "request": "^2.64.0"
+  }
+}
