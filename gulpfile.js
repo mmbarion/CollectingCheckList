@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var plumber = require('gulp-plumber');
 var $ = require('gulp-load-plugins')();
 //var electron = require('electron-connect').server.create();
 
@@ -8,6 +9,7 @@ var compDir = 'app/component';
 //jsxファイルのコンパイル
 gulp.task('compile',function(){
 	return gulp.src('src/**/*.{js,jsx}')
+		.pipe(plumber())
 		.pipe($.babel({
 			stage:0
 		}))
