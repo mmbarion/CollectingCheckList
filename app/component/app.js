@@ -49,10 +49,13 @@ var Test = React.createClass({
 			id: 1
 		};
 	},
+	componentDidMount: function componentDidMount() {
+		console.log(this.refs.myDiv.props.children);
+	},
 	render: function render() {
 		return React.createElement(
 			'div',
-			null,
+			{ ref: 'myDiv' },
 			this.props.id,
 			':',
 			this.props.name

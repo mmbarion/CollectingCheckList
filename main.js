@@ -20,7 +20,7 @@ app.on('ready',function() {
 		height: 900,
 		center:true
 	});
-	mainWindow.loadUrl('file://' + __dirname + '/app/html/index.html');
+	mainWindow.loadUrl('file://' + __dirname + '/app/html/main_app.html');
 
 	mainWindow.on('closed',function() {
 		mainWindow = null;
